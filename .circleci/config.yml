@@ -24,7 +24,7 @@ jobs:
           command: npm install
       # Cache local dependencies if they don't exist
       - save_cache:
-          key: v1-dependencies-{{ checksum "practice-app/fropackage-lock.json" }}
+          key: v1-dependencies-{{ checksum "practice-app/package-lock.json" }}
           paths:
             - node_modules
       # Lint the source code
